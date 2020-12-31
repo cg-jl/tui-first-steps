@@ -55,23 +55,6 @@ std::vector<Font> FontConfig::filter(const FontFilter& filter) {
     return fonts;
 }
 
-// iterators2::Iterator<Font, iterators2::backend::Filter<Font>>
-// FontConfig::filter(const FontFilter& filter) {
-//     return iterators2::Iterator<Font, iterators2::backend::Filter<Font>>(
-//                m_fonts)
-//         .filter([&](const Font& f) {
-//             if (filter.family && fuzzyFind(*filter.family, f.family))
-//                 return true;
-//             if (filter.style && fuzzyFind(*filter.style, f.style)) return
-//             true; if (filter.file && fuzzyFind(*filter.file, f.file)) return
-//             true; if (filter.language && fuzzyFind(*filter.language,
-//             f.language))
-//                 return true;
-
-//             return false;
-//         });
-// }
-
 std::string cut(const std::string& src, unsigned int nChars = 10) {
     if (src.size() <= nChars) return src;
     return src.substr(0, nChars) + "...";
