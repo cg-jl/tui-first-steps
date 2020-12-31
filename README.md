@@ -20,3 +20,13 @@ If you built it in debug mode (defaults to debug mode if no arguments are passed
 change `release` for `debug` in the above path.
 
 I really hope it doesn't break....
+
+# Controls
+
+It has two modes, `filter` mode and `list` mode. You press <kbd>Tab</kbd> to switch between them.
+<kbd>Ctrl</kbd> + <kbd>q</kbd> quits the program. <kbd>Enter</kbd> also quits the program if you're in list mode.
+
+In filter mode, you just modify the filter string which is used for the filter.
+In list mode, you use `j` and `k` to navigate down and up, `G` gets you to the bottom of the list and `H` gets you to the top.
+
+Dead simple, right?
