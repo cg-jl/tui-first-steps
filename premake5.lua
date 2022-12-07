@@ -10,6 +10,8 @@ workspace "tui"
   filter "configurations:release"
   optimize "on"
 
+  toolset 'clang'
+
   filter {}
   buildoptions { "--std=c++2a"}
 
